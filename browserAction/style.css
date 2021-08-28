@@ -1,0 +1,39 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  padding: 0.5em 1em;
+}
+
+#title {
+  padding: 0;
+  margin: 0;
+  font-size: 20pt;
+  cursor: default;
+}
+
+.property {
+  display: grid;
+  grid-template-areas: "name value";
+  grid-template-columns: 1fr 1fr;
+  margin: 0.75em 0;
+}
+
+.name {
+  grid-area: name;
+  text-align: left;
+  cursor: default;
+}
+
+.value {
+  grid-area: value;
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}

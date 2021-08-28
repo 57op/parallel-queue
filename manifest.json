@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "applications": {
+    "gecko": {
+      "id": "parallel-queue@57op.github.io"
+    }
+  },
+  "name": "Parallel Queue",
+  "version": "0.0.1",
+  "author": "57op",
+  "homepage_url": "https://github.com/57op/parallel-queue",
+  "description": "A Firefox extension that allows you to open an arbitrary number of tabs pointing to n URL (most likely a certain GPU company's store), with a certain time delay between tabs. It automatically selects the first tab to load.",
+  "icons": {
+    "48": "icons/icon.png"
+  },
+  "permissions": [
+    "cookies",
+    "contextualIdentities",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "64": "icons/icon.png"
+    },
+    "default_title": "Parallel Queue",
+    "default_popup": "browserAction/index.html"
+  }
+}

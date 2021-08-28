@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="title">Parallel Queue settings</h1>
+      <form id="settings">
+        <div class="property">
+          <label for="tabs-number" class="name">Number of tabs:</label>
+          <input id="tabs-number" name="tabs-number" class="value" type="number" min="1" step="1" size="4" value="5" required>
+        </div>
+        <div class="property">
+          <label for="tab-url" class="name">URL:</label>
+          <input id="tab-url" name="tab-url" class="value" type="url" value="https://example.com" required>
+        </div>
+        <div class="property">
+          <label for="tab-delay" class="name" title="Seconds to wait to open the next tab">Tab Time delay (s):</label>
+          <input id="tab-delay" name="tab-delay" class="value" type="number" min="0.0" step="0.1" value="5.0" required>
+        </div>
+        <div class="property">
+          <label for="site-delay" class="name" title="Seconds to wait before actually loading the destination URL">Site Time delay (s):</label>
+          <input id="site-delay" name="site-delay" class="value" type="number" min="0.0" step="0.1" value="0.0" required>
+        </div>
+        <div class="property">
+          <label for="tabs-close" class="name" title="If enabled, only the first tab loading destination URL will be kept">Close remaining tabs:</label>
+          <input id="tabs-close" name="tabs-close" class="value" type="checkbox">
+        </div>
+        <div class="center">
+          <button type="submit">Run</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
