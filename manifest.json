@@ -9,7 +9,7 @@
   "version": "0.0.1",
   "author": "57op",
   "homepage_url": "https://github.com/57op/parallel-queue",
-  "description": "A Firefox extension that allows you to open an arbitrary number of tabs pointing to n URL (most likely a certain GPU company's store), with a certain time delay between tabs. It automatically selects the first tab to load.",
+  "description": "A Firefox extension that allows you to open an arbitrary number of tabs, each one of them in a different container, pointing to an URL (most likely a certain GPU company's store). It will automatically select the first tab to load.",
   "icons": {
     "48": "icons/icon.png"
   },
